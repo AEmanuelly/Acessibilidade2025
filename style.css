@@ -1,14 +1,52 @@
+/* Definindo um contraste adequado para acessibilidade */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Tamanho padrão da fonte */
+}
+
+/* Modo de alto contraste */
+body.high-contrast {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 header {
-    background-color: #00796b;
+    background-color: #4682b4; /* Cor relacionada ao exército */
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+}
+
+#font-size-controls {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#contrast-control button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
 }
 
 nav ul {
@@ -18,151 +56,69 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 a {
-    color: #00796b;
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
+a:focus, a:hover {
     text-decoration: underline;
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+main {
+    padding: 20px;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
     color: #333;
 }
 
-header {
-    background-color: #00796b;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Ajustes para leitores de tela */
+h1, h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+p {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+ul {
+    padding-left: 20px;
 }
 
-a {
-    color: #00796b;
-    text-decoration: none;
-}
+/* Responsividade: ajustes para telas menores */
+@media (max-width: 768px) {
+    #logo {
+        width: 120px; /* Ajusta o tamanho da imagem em telas menores */
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    nav ul {
+        text-align: center;
+    }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-header {
-    background-color: #00796b;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    color: #00796b;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #00796b;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    color: #00796b;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    body {
+        font-size: 14px; /* Tamanho da fonte reduzido em telas pequenas */
+    }
 }

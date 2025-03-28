@@ -1,65 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alistamento Voluntário Feminino</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Alistamento Voluntário Feminino no Exército</h1>
+        <div id="font-size-controls">
+            <button onclick="adjustFontSize('decrease')">Ajustar Fonte -</button>
+            <button onclick="adjustFontSize('increase')">Ajustar Fonte +</button>
+        </div>
+        <!-- Botão para alternar o modo de alto contraste -->
+        <div id="contrast-control">
+            <button onclick="toggleContrast()">Alternar Modo de Alto Contraste</button>
+        </div>
+        <img src="servico-militar-feminino.jpg" alt="Logo do Exército Brasileiro: Representação visual de uma força armada sólida e unida" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre o Alistamento</a></li>
+                <li><a href="#exigencias">Exigências</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#fontes">Fontes e Referências</a></li>
+                <li><a href="#historia">Como Surgiu o Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" role="region" aria-labelledby="sobre-heading">
+            <h2 id="sobre-heading">Sobre o Alistamento Voluntário Feminino</h2>
+            <p>O alistamento voluntário feminino no Exército Brasileiro tem como objetivo abrir portas para a igualdade de oportunidades entre os gêneros nas forças armadas. A mulher pode ingressar de forma voluntária, desempenhando diversas funções no exército, como combatente e profissional em áreas administrativas e técnicas.</p>
+        </section>
+
+        <section id="exigencias" role="region" aria-labelledby="exigencias-heading">
+            <h2 id="exigencias-heading">Exigências para o Alistamento</h2>
+            <ul>
+                <li>Idade entre 18 e 21 anos.</li>
+                <li>Estar em boas condições de saúde física e mental.</li>
+                <li>Possuir ensino médio completo.</li>
+                <li>Ser brasileira e não ter restrições judiciais ou criminais.</li>
+            </ul>
+        </section>
+
+        <section id="beneficios" role="region" aria-labelledby="beneficios-heading">
+            <h2 id="beneficios-heading">Benefícios do Alistamento</h2>
+            <ul>
+                <li>Desenvolvimento de habilidades técnicas e profissionais.</li>
+                <li>Oportunidade de progressão na carreira militar.</li>
+                <li>Acesso a planos de saúde e benefícios financeiros.</li>
+                <li>Contribuição significativa para a defesa nacional e segurança do país.</li>
+            </ul>
+        </section>
+
+        <section id="inscricao" role="region" aria-labelledby="inscricao-heading">
+            <h2 id="inscricao-heading">Como Realizar a Inscrição</h2>
+            <p>A inscrição para o alistamento pode ser feita online no site oficial do Exército Brasileiro. Acesse o site abaixo para obter mais informações e realizar o seu cadastro:</p>
+            <ul>
+                <li><a href="https://www.alistamento.eb.mil.br" target="_blank">Clique aqui para acessar o portal de alistamento</a></li>
+            </ul>
+        </section>
+
+        <section id="fontes" role="region" aria-labelledby="fontes-heading">
+            <h2 id="fontes-heading">Fontes e Referências</h2>
+            <p>As informações aqui contidas foram retiradas de fontes confiáveis e do próprio site do Exército Brasileiro, além de materiais oficiais que detalham o alistamento voluntário feminino nas forças armadas.</p>
+            <ul>
+                <li><a href="https://www.alistamento.eb.mil.br" target="_blank">Site Oficial do Exército Brasileiro</a></li>
+                <li><a href="https://www.gov.br/marinha/pt-br" target="_blank">Marinha do Brasil - Alistamento</a></li>
+                <li><a href="https://www.defesa.gov.br" target="_blank">Ministério da Defesa - Brasil</a></li>
+            </ul>
+        </section>
+
+        <section id="historia" role="region" aria-labelledby="historia-heading">
+            <h2 id="historia-heading">Como Surgiu o Projeto</h2>
+            <p>Este projeto foi idealizado com o intuito de aumentar a conscientização sobre o alistamento voluntário feminino no Exército Brasileiro, destacando a importância das mulheres nas forças armadas e incentivando a igualdade de oportunidades para as mulheres que desejam seguir a carreira militar. O objetivo é também promover a acessibilidade da informação, garantindo que todas as mulheres possam ter acesso aos dados necessários para tomar uma decisão informada sobre o alistamento.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alistamento Voluntário Feminino no Exército Brasileiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-<section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-    <div class="container d-flex align-items-center ">
-            <div class="col-4 d-flex justify-content-center">
-                    <img src="img/image (1).png" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
-            </div>
-            <div class="col-5">
-                    <h2>O que foi a Tropicália?</h2>
-                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
-                            brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
-                            abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
-                            teve como principal característica a mistura de elementos da cultura brasileira tradicional com
-                            influências estrangeiras, especialmente do rock e da música pop. Fonte: Site Toda a matéria</p>
-            </div>
-    </div>
-</section>
-
-<section id="galeria">
-    <h2 class="text-center pt-5">Galeria</h2>
-    <div class="container p-3 mt-3 fundo-galeria ">
-
-            <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                            <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
-                                    class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                            <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
-                                    loading="lazy">
-                    </div>
-            </div>
-            <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                            <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                            <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
-                                    class="img-fluid rounded-5" loading="lazy">
-                    </div>
-            </div>
-     </div>
-</section>
-<section id="inicio" class="my-5">
-    <div class="inicio-fundo d-flex justify-content-between align-items-center">
-            <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/logo-2.png" class="mb-3" width="563"
-                            height="278" loading="lazy">
-                    <a href="#tropicalia"
-                            class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
-            </div>
-            <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" class="img-fluid img-inicio">
-        </div>
-</section>
-<img
